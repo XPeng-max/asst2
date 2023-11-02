@@ -1,0 +1,61 @@
+[
+ {
+  "directory": "/home/pxk/CS149/asst2/part_a",
+  "arguments": [
+   "g++",
+   "-m64",
+   "../common/ppm.cpp",
+   "-I.",
+   "-I../common",
+   "-I../tests",
+   "-Iobjs/",
+   "-O3",
+   "-std=c++11",
+   "-Wall",
+   "-c",
+   "-o",
+   "objs/ppm.o"
+  ],
+  "file": "../common/ppm.cpp"
+ },
+ {
+  "directory": "/home/pxk/CS149/asst2/part_a",
+  "arguments": [
+   "g++",
+   "-m64",
+   "tasksys.cpp",
+   "-I.",
+   "-I../common",
+   "-I../tests",
+   "-Iobjs/",
+   "-O3",
+   "-std=c++11",
+   "-Wall",
+   "-c",
+   "-o",
+   "objs/tasksys.o"
+  ],
+  "file": "tasksys.cpp"
+ },
+ {
+  "directory": "/home/pxk/CS149/asst2/part_a",
+  "arguments": [
+   "g++",
+   "-m64",
+   "../tests/main.cpp",
+   "-I.",
+   "-I../common",
+   "-I../tests",
+   "-Iobjs/",
+   "-O3",
+   "-std=c++11",
+   "-Wall",
+   "-o",
+   "runtasks",
+   "objs/tasksys.o",
+   "-lm",
+   "-lpthread"
+  ],
+  "file": "../tests/main.cpp"
+ }
+]
